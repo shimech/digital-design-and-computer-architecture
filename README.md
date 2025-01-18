@@ -19,6 +19,7 @@ ref: https://github.com/randomplum/gtkwave
 ## Run sample code
 
 ```sh
-iverilog -o ./hello/hello.vvp ./hello/hello.sv
-vvp ./hello/hello.vvp
+cd hello
+iverilog -o hello.out -g2012 hello.sv
+vvp hello.out
 ```
